@@ -1,0 +1,293 @@
+<!-- Filters -->
+<div class="bg-white rounded-xl p-6 shadow-sm  border-gray-100 mb-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Matière</label>
+            <select
+                class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--primary-color1)]">
+                <option>Toutes les matières</option>
+                <option>Mathématiques</option>
+                <option>Physique</option>
+                <option>Chimie</option>
+                <option>Français</option>
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Niveau</label>
+            <select
+                class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--primary-color1)]">
+                <option>Tous les niveaux</option>
+                <option>Collège</option>
+                <option>Lycée</option>
+                <option>Université</option>
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Prix max</label>
+            <input type="range" min="10" max="50" value="30" class="w-full">
+            <div class="text-sm text-gray-500 mt-1">3000 XAF/h</div>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Disponibilité</label>
+            <select
+                class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--primary-color1)]">
+                <option>Toute disponibilité</option>
+                <option>Maintenant</option>
+                <option>Aujourd'hui</option>
+                <option>Cette semaine</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- Tutors List -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Tutor Card 1 -->
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="flex items-center mb-4">
+            <div
+                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                RB
+            </div>
+            <div class="ml-3">
+                <h3 class="font-semibold text-gray-900">Rose Bonbon</h3>
+                <p class="text-sm text-gray-500">Étudiante en Master</p>
+            </div>
+            <div class="ml-auto">
+                <span
+                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                    En ligne
+                </span>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm">
+                    ★★★★★
+                </div>
+                <span class="ml-2 text-sm text-gray-600">4.9 (127 avis)</span>
+            </div>
+            <p class="text-sm text-gray-600">Spécialisée en Mathématiques et Physique. 3 ans
+                d'expérience en soutien scolaire.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Mathématiques</span>
+            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Physique</span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <span class="text-lg font-bold text-[var(--primary-color1)]">2500 XAF/h</span>
+            <button onclick="showTab('accueil')"
+                class="px-4 py-2 bg-[var(--primary-color1)] text-white rounded-lg hover:bg-[var(--primary-color2)] transition-colors">
+                Contacter
+            </button>
+        </div>
+    </div>
+
+    <!-- Tutor Card 2 -->
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="flex items-center mb-4">
+            <div
+                class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                AT
+            </div>
+            <div class="ml-3">
+                <h3 class="font-semibold text-gray-900">Axel Thierry</h3>
+                <p class="text-sm text-gray-500">Doctorant en Physique</p>
+            </div>
+            <div class="ml-auto">
+                <span
+                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                    Occupé
+                </span>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm">
+                    ★★★★★
+                </div>
+                <span class="ml-2 text-sm text-gray-600">4.8 (89 avis)</span>
+            </div>
+            <p class="text-sm text-gray-600">Expert en Physique quantique et Chimie organique. Pédagogie
+                adaptée à chaque niveau.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Physique</span>
+            <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">Chimie</span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <span class="text-lg font-bold text-[var(--primary-color1)]">3000 XAF/h</span>
+            <button onclick="showTab('accueil')"
+                class="px-4 py-2 bg-[var(--primary-color1)] text-white rounded-lg hover:bg-[var(--primary-color2)] transition-colors">
+                Contacter
+            </button>
+        </div>
+    </div>
+
+    <!-- Tutor Card 3 -->
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="flex items-center mb-4">
+            <div
+                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                JP
+            </div>
+            <div class="ml-3">
+                <h3 class="font-semibold text-gray-900">Jean Placide</h3>
+                <p class="text-sm text-gray-500">Étudiant en Lettre</p>
+            </div>
+            <div class="ml-auto">
+                <span
+                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                    En ligne
+                </span>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm">
+                    ★★★★☆
+                </div>
+                <span class="ml-2 text-sm text-gray-600">4.7 (56 avis)</span>
+            </div>
+            <p class="text-sm text-gray-600">Passionné de littérature et d'histoire. Aide à la
+                rédaction et méthodologie.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Français</span>
+            <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">Histoire</span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <span class="text-lg font-bold text-[var(--primary-color1)]">1200 XAF/h</span>
+            <button onclick="showTab('chats')"
+                class="px-4 py-2 bg-[var(--primary-color1)] text-white rounded-lg hover:bg-[var(--primary-color2)] transition-colors">
+                Contacter
+            </button>
+        </div>
+    </div>
+
+    <!-- Tutor Card 4 -->
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="flex items-center mb-4">
+            <div
+                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                IB
+            </div>
+            <div class="ml-3">
+                <h3 class="font-semibold text-gray-900">Info Bot</h3>
+                <p class="text-sm text-gray-500">Bot spécialisé en informatique</p>
+            </div>
+            <div class="ml-auto">
+                <span
+                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                    En ligne
+                </span>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm">
+                    ★★★★☆
+                </div>
+                <span class="ml-2 text-sm text-gray-600">4.7 (1556 avis)</span>
+            </div>
+            <p class="text-sm text-gray-600">Repetiteur ia spécialisé dans l'informatique, pour tous vos problèmes en
+                informatiques, je suis votre bot
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Informatique</span>
+
+            </div>
+
+            <div class="flex items-center justify-between">
+                <span class="text-lg font-bold text-[var(--primary-color1)]">1200 XAF/h</span>
+                <button onclick="openChat()"
+                    class="px-4 py-2 bg-[var(--primary-color1)] text-white rounded-lg hover:bg-[var(--primary-color2)] transition-colors">
+                    Contacter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatPopup" class="hidden fixed inset-0 bg-[rgba(f,f,f,0.1)] backdrop-blur-2xl z-50 flex items-center justify-center p-4">
+        <div class="w-full max-w-md h-[80vh] bg-white rounded-2xl flex flex-col overflow-hidden shadow-2xl">
+           
+            <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center font-bold text-sm">
+                        IB
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Info Bot</h3>
+                        <p class="text-sm opacity-90">Spécialiste en informatique</p>
+                    </div>
+                </div>
+                <button onclick="closeChat()" class="text-white hover:bg-white hover:bg-opacity-20 rounded-full p-2 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            
+            <div id="messagesContainer" class="flex-1 overflow-y-auto p-4 space-y-4">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xs flex-shrink-0">
+                        IB
+                    </div>
+                    <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-2xl bg-gray-100 text-gray-800">
+                        Bonjour ! Je suis Info Bot, votre assistant spécialisé en informatique. Comment puis-je vous aider aujourd'hui ?
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="typingIndicator" class="hidden px-4">
+                <div class="flex items-start gap-3 mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xs flex-shrink-0">
+                        IB
+                    </div>
+                    <div class="px-4 py-2 rounded-2xl bg-gray-100">
+                        <div class="flex gap-1">
+                            <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot"></div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot"></div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="p-4 border-t border-gray-200 bg-gray-50">
+                <div class="flex gap-3">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Tapez votre question ici..." 
+                        class="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                        onkeypress="handleKeyPress(event)"
+                    />
+                    <button 
+                        onclick="sendMessage()" 
+                        id="sendButton"
+                        class="px-6 py-2 bg-[var(--primary-color1)] text-white rounded-full hover:bg-primary-dark transition-colors flex items-center justify-center disabled:opacity-50"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Revisio</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../styles/color.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../../public/global.css">
+    <link rel="icon" href="../public/assets/logo.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+</head>
+
+<body class="bg-gray-50">
+   
+    <div id="sidebar"
+        class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
+
+    </div>
+
+    
+    <div class="lg:hidden fixed top-4 left-4 z-50">
+        <button onclick="toggleSidebar()" class="p-2 bg-white rounded-lg shadow-lg">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd" />
+            </svg>
+        </button>
+    </div>
+
+  
+    <div class="lg:ml-64">
+       
+        <header class="bg-white shadow-sm border-b border-gray-300">
+            <div class="px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <a href="../../src/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></a>  <h2 id="page-title" class="text-xl font-semibold text-gray-800">Accueil</h2>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        
+                        <div class="hidden md:block">
+                            <div class="relative">
+                                <input type="text" placeholder="Rechercher..."
+                                    class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--primary-color1)] focus:border-transparent">
+                                <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        
+                        <div class="relative">
+                            <button class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-[var(--primary-color1)] to-[var(--primary-color2)] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                    DD
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <main class="p-4 sm:p-6 lg:p-8">
+           
+            <div id="accueil-tab" class="tab-content">
+
+            </div>
+
+            
+            <div id="explorer-tab" class="tab-content hidden">
+
+            </div>
+
+            
+            <div id="chats-tab" class="tab-content hidden">
+                
+            </div>
+
+            
+            <div id="notifications-tab" class="tab-content hidden">
+                
+            </div>
+        </main>
+    </div>
+
+    
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden hidden"
+        onclick="toggleSidebar()"></div>
+
+    <script src="../../public/js/dashboard.js"></script>
+    <script src="../../public/js/index.js"></script>
+</body>
+
+</html>

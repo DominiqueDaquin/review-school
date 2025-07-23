@@ -1,0 +1,159 @@
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-200px)]">
+                    <!-- Chat List -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100">
+                        <div class="p-4 border-b border-gray-100" >
+                            <h3 class="font-semibold text-gray-900">Messages</h3>
+                        </div>
+                        <div class="overflow-y-auto h-full">
+                            <!-- Chat Item 1 -->
+                            <div class="p-4 border-b hover:bg-gray-50 cursor-pointer chat-item active border-gray-100"
+                                onclick="selectChat('marie')">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        MD
+                                    </div>
+                                    <div class="ml-3 flex-1">
+                                        <div class="flex items-center justify-between">
+                                            <h4 class="font-medium text-gray-900">Rose Bonbon</h4>
+                                            <span class="text-xs text-gray-500">14:30</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 truncate">Parfait ! À demain pour le cours de
+                                            maths</p>
+                                    </div>
+                                    <div class="ml-2">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full block"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat Item 2 -->
+                            <div class="p-4 border-b hover:bg-gray-50 cursor-pointer chat-item border-gray-100"
+                                onclick="selectChat('paul')">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        AT
+                                    </div>
+                                    <div class="ml-3 flex-1">
+                                        <div class="flex items-center justify-between">
+                                            <h4 class="font-medium text-gray-900">Axel Thierry</h4>
+                                            <span class="text-xs text-gray-500">12:15</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 truncate">Merci pour le cours, très instructif !
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat Item 3 -->
+                            <div class="p-4 border-b hover:bg-gray-50 cursor-pointer chat-item border-gray-100"
+                                onclick="selectChat('sophie')">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        JP
+                                    </div>
+                                    <div class="ml-3 flex-1">
+                                        <div class="flex items-center justify-between">
+                                            <h4 class="font-medium text-gray-900">Jean Placide</h4>
+                                            <span class="text-xs text-gray-500">Hier</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 truncate">Dominique peux tu m'aider avec ce problème ?</p>
+                                    </div>
+                                    <div class="ml-2">
+                                        <span class="w-2 h-2 bg-red-500 rounded-full block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Window -->
+                    <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col">
+                        <!-- Chat Header -->
+                        <div class="p-4 border-b flex items-center border-gray-100">
+                            <div
+                                class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                                RB
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-medium text-gray-900">Rose Bonbon</h4>
+                                <p class="text-sm text-green-600">En ligne</p>
+                            </div>
+                            <div class="ml-auto flex space-x-2">
+                                <button class="p-2 hover:bg-gray-100 rounded-lg">
+                                    <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                    </svg>
+                                </button>
+                                <button class="p-2 hover:bg-gray-100 rounded-lg">
+                                    <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Messages -->
+                        <div class="flex-1 p-4 overflow-y-auto space-y-4">
+                            <!-- Received Message -->
+                            <div class="flex">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                    RB
+                                </div>
+                                <div class="ml-3 max-w-xs lg:max-w-md">
+                                    <div class="bg-gray-100 rounded-lg p-3">
+                                        <p class="text-sm text-gray-800">Salut ! J'espère que tu vas bien. As-tu eu le
+                                            temps de réviser les équations qu'on a vues hier ?</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-1">14:25</p>
+                                </div>
+                            </div>
+
+                            <!-- Sent Message -->
+                            <div class="flex justify-end">
+                                <div class="max-w-xs lg:max-w-md">
+                                    <div class="bg-[var(--primary-color1)] rounded-lg p-3">
+                                        <p class="text-sm text-white">Oui, j'ai bien révisé ! J'ai encore quelques
+                                            questions sur les dérivées partielles.</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-1 text-right">14:28</p>
+                                </div>
+                            </div>
+
+                            <!-- Received Message -->
+                            <div class="flex">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                    RB
+                                </div>
+                                <div class="ml-3 max-w-xs lg:max-w-md">
+                                    <div class="bg-gray-100 rounded-lg p-3">
+                                        <p class="text-sm text-gray-800">Parfait ! On pourra revoir ça ensemble demain.
+                                            À quelle heure es-tu disponible ?</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-1">14:30</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div class="p-4 border-t border-gray-100">
+                            <div class="flex space-x-2">
+                                <input type="text" placeholder="Tapez votre message..."
+                                    class="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2  focus:border-transparent">
+                                <button
+                                    class="px-4 py-3 bg-[var(--primary-color1)] text-white rounded-lg hover:bg-[var(--primary-color2)] transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
