@@ -20,6 +20,10 @@ inclusion("../components/explorer-tab.html", "explorer-tab");
 inclusion("../components/chats-tab.html", "chats-tab");
 inclusion("../components/notifications-tab.html", "notifications-tab");
 
+
+
+
+
 const API_CONFIG = {
   url: "https://api.deepseek.com/v1/chat/completions",
   apiKey: "sk-76c2c3639a9845c19d335756677d0a96",
@@ -166,3 +170,13 @@ document.addEventListener("keydown", function (e) {
     closeChat();
   }
 });
+
+const burgerMenu=document.getElementById('#burger-menu')
+const navMenu=document.getElementById('#nav-menu')
+
+
+burgerMenu.addEventListener('click',()=>{
+  console.log('coucu');
+  
+  navMenu.classList.toggle('-translate-y-full')
+})
